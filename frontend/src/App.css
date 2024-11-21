@@ -1,0 +1,44 @@
+/* Global CSS Reset */
+/*or change to darker color? old color was C8D9E6*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a, button {
+  outline: none; /* Remove outline from all links and buttons */
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+/* Ensure the full height for html, body, and root */
+html, body, #root {
+  height: 100%;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #C8D9E6; /* This allows the particles to be visible */
+}
+
+.content {
+  position: relative; /* Allow stacking context for absolute children */
+  z-index: 1; /* Ensure content is above the canvas */
+  padding: 20px;
+}
+
+/* Using EB Garamond for headings */
+h1, h2, h3 {
+  font-family: 'EB Garamond', sans-serif;
+}
+
+/* Using Lora for body text */
+body, p {
+  font-family: 'Lora', serif;
+}
+
+
+

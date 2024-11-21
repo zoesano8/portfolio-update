@@ -1,0 +1,76 @@
+.about-section-container {
+    position: relative; /* Ensure particles are positioned within this container */
+    width: 100%;
+    background-color: transparent;
+}
+
+
+.about-section {
+    position: relative;
+    z-index: 1; /* Ensure the content is on top of particles */
+    padding: 40px 20px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1100px;
+    background-color: transparent;
+}
+
+.headshot {
+    border-radius: 50%;
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    object-fit: cover;
+}
+
+
+.typewriter {
+    font-family: 'Lora', serif;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 2rem;
+    border-right: 2px solid;
+}
+
+.blinking::after {
+    content: '|';
+    position: absolute;
+    right: 0;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.typewriter:not(.blinking) {
+    border-right: none;
+}
+
+/* Default font size for larger screens */
+.about-section p {
+    line-height: 1.3;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 1600px) {
+    .about-section p {
+        font-size: 1.2rem; /* Smaller font size for tablets or smaller screens */
+    }
+}
+@media (max-width: 678px) {
+    .about-section p {
+        font-size: 1rem; /* Smaller font size for tablets or smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section p {
+        font-size: 0.8rem; /* Even smaller font size for mobile */
+    }
+}

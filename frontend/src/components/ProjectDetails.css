@@ -1,0 +1,141 @@
+/* ProjectDetails.css */
+
+/* General Layout */
+.project-details {
+  margin: 30px 50px 30px 50px;
+  color: #333;
+}
+
+.project-details h1,
+.project-details p {
+  text-align: center;
+  margin: auto;
+}
+
+.project-details h1 {
+  font-size: 2.5em;
+  color: #1e2a47;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project-details p,
+.project-details ul {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.project-details .details,
+.project-details .details2 {
+  margin: auto;
+  text-align: left;
+}
+
+.project-details .details li,
+.project-details .details2 li {
+  list-style-type: square;
+  margin-bottom: 10px;
+}
+
+/* Image Section */
+.project-images {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap if needed */
+  justify-content: center; /* Center the images horizontally */
+  gap: 15px; /* Space between images */
+}
+
+.project-images .image-container {
+  width: calc(60% - 30px); /* Adjust width as needed */
+  text-align: center;
+  margin: 15px;
+}
+
+.project-images img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-images .image-description {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+  align-items: center;
+}
+
+
+/* PDF Viewer */
+.project-pdf {
+  margin-top: 40px;
+}
+
+.project-pdf h2 {
+  font-size: 1.8em;
+  color: #1e2a47;
+}
+
+.project-pdf iframe {
+  border-radius: 8px;
+}
+
+/* Video Section */
+.project-video {
+  margin-top: 40px;
+}
+
+.project-video h2 {
+  font-size: 1.8em;
+  color: #1e2a47;
+}
+
+.project-video video {
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+/* Text Styling */
+.details {
+  margin-left: 30px;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.details2 {
+  margin-top: 30px;
+  font-size: 1.1em;
+  color: #444;
+}
+
+.project-details br {
+  margin-bottom: 30px;
+}
+
+.project-pdf, .project-video {
+  margin: 20px; /* Adjust as needed */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: adds a slight background color */
+  padding: 10px; /* Optional: adds padding for better appearance */
+  border-radius: 8px; /* Optional: rounds the corners */
+}
+
+.pdf, .vid {
+  border-radius: 8px;
+}
+
+.project-details a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project-details a:hover {
+  text-decoration: underline;
+}
+
+.details p {
+  margin-bottom: 1.5em; /* Adjust spacing as needed */
+  text-align: left;
+
+}
+
